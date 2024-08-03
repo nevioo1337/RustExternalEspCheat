@@ -400,7 +400,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 			if (globals::gui::bShowMenu)
 			{
 				ImGui::SetNextWindowSize({ 300, 300 });
-				if (ImGui::Begin("Rust External by synq666", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar))
+				if (ImGui::Begin("Rust External", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar))
 				{
 					ImGui::Checkbox("Tracer", &globals::gui::cheats::bTracer);
 					ImGui::Checkbox("Bone ESP", &globals::gui::cheats::bBoneEsp);
